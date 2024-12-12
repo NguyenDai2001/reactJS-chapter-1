@@ -1,11 +1,14 @@
 import react from "react";
 
 class MyComponent extends react.Component {
-
+    state = {
+        name: "Nguyen Dai",
+        age: 22
+    }
     render() {
         return (
             <div>
-                mmama: {Math.random(10)}
+                mmama: {this.state.name}
             </div>
         )
     }
