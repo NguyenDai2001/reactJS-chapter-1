@@ -1,14 +1,18 @@
 import react from "react";
+import UserInfo from "./userInfo";
+import DisplayInfo from "./DisplayInfo";
 
 class MyComponent extends react.Component {
-    state = {
-        name: "Nguyen Dai",
-        age: 22
-    }
+
+
+
     render() {
+        const myInfo = ["a", "b", "c"];
         return (
             <div>
-                mmama: {this.state.name}
+                <UserInfo />
+                <DisplayInfo name="Nguyen dai 123" age={23} myInfo={myInfo} />
+
             </div>
         )
     }
